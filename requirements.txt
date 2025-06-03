@@ -1,6 +1,10 @@
+Flask
+joblib
+lightfm
+numpy
 pandas
 pymongo
 mysql-connector-python
 python-dotenv
-pyarrow
 configparser
+pyarrow
