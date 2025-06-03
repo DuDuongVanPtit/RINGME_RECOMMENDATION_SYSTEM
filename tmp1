@@ -1,0 +1,28 @@
+import pandas as pd
+
+# Đường dẫn đến tệp Parquet của bạn
+# file_path = './output_data/interactions_limited.parquet'
+# file_path = './output_data/user_channel_interactions_limited.parquet'
+# file_path = './output_data/user_features_limited.parquet'
+file_path = './output_data/video_features_limited.parquet'
+
+try:
+    # Đọc tệp Parquet vào một DataFrame của pandas
+    df = pd.read_parquet(file_path)
+
+    # Bây giờ bạn có thể làm việc với DataFrame 'df'
+    # Ví dụ: hiển thị 5 dòng đầu tiên
+    print("5 dòng đầu tiên của dữ liệu:")
+    print(df.head(100))
+
+    # Ví dụ: hiển thị thông tin về DataFrame (kiểu dữ liệu, số lượng non-null)
+    print("\nThông tin DataFrame:")
+    df.info()
+
+    # Ví dụ: xem số dòng và số cột
+    print(f"\nSố dòng: {df.shape[0]}, Số cột: {df.shape[1]}")
+
+except FileNotFoundError:
+    print(f"Lỗi: Không tìm thấy tệp tại '{file_path}'")
+except Exception as e:
+    print(f"Đã xảy ra lỗi khi đọc tệp Parquet: {e}")
