@@ -3,7 +3,7 @@
 ## Giới thiệu 
 
 Dự án này bao gồm hai thành phần chính:
-1.  **Thu thập và Xử lý Dữ liệu (`COLLECT_DATA`):** Các scripts và quy trình để thu thập dữ liệu từ nguồn (ví dụ: database) và xử lý chúng thành các tập dataset sạch, sẵn sàng cho việc huấn luyện mô hình.
+1.  **Thu thập và Xử lý Dữ liệu (`COLLECT_DATA`):** Các scripts và quy trình để thu thập dữ liệu từ nguồn và xử lý chúng thành các tập dataset sạch, sẵn sàng cho việc huấn luyện mô hình.
 2.  **Dịch vụ Gợi ý Video (`recommendation_api`):** Một API service sử dụng mô hình LightFM đã được huấn luyện để cung cấp các gợi ý video cho người dùng.
 
 Mô hình gợi ý được huấn luyện riêng biệt (trên Kaggle) và các artifacts của mô hình (model, dataset object, etc.) được sử dụng bởi API service.
@@ -37,7 +37,7 @@ Dưới đây là mô tả sơ lược về các thư mục chính trong dự á
 -   Python (khuyến nghị phiên bản 3.7 trở lên)
 -   `pip` (trình quản lý gói Python)
 
-### Tạo và Kích hoạt Môi trường ảo (Virtual Environment)
+### Tạo và Kích hoạt Môi trường ảo 
 
 1.  Mở terminal hoặc command prompt, di chuyển đến thư mục gốc của dự án.
 2.  Tạo môi trường ảo:
